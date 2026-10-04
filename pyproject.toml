@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools==80.10.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-context-redactor"
+version = "0.1.0"
+description = "Offline pattern redaction for AI context: emails, German IBANs and credential assignments."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Mika Mischke"}]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/luminosstudioai-creator/ai-context-redactor"
+
+[tool.setuptools]
+py-modules = ["redactor"]
+
+[project.scripts]
+ai-context-redactor = "redactor:main"
